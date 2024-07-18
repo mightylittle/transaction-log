@@ -1,0 +1,5 @@
+!dist/.keep
+dist/
+node_modules/
+SCRATCH
+docs/
