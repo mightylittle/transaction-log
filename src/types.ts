@@ -17,7 +17,7 @@ export type Commit = {
    * Array of transaction IDs included in the commit.
    */
   transactions: number[];
-};
+}
 
 /**
  * @remarks
@@ -40,7 +40,7 @@ export type CommitInfo<T> = {
    * Array of transactions included in the commit.
    */
   transactions: Transaction<T>[];
-};
+}
 
 /**
  * @remarks
@@ -57,7 +57,7 @@ export type Transaction<T> = {
    * Application-specific data.
    */
   data: T;
-};
+}
 
 /**
  * @remarks
@@ -87,7 +87,7 @@ export interface SimpleTransactionLogCallbacks<T> {
    * Application data to write to the transaction-log.
    */
   onappend?: (data: T) => void;
-};
+}
 
 /**
  * @remarks
@@ -123,7 +123,7 @@ export interface BatchedTransactionLogCallbacks<T> extends SimpleTransactionLogC
    * Callback called after committing buffered transactions.
    */
   oncommit?: (commit: Commit) => void;
-};
+}
 
 /**
  * @remarks
@@ -188,7 +188,7 @@ export interface SimpleTransactionLog<T> {
    * Sequence identifier of the final transaction-entry to include in results (inclusive).
    */
   getSeqRangeTransactions(startId: number, finishId?: number): Promise<Transaction<T>[]>;
-};
+}
 
 /**
  * @remarks
@@ -277,5 +277,4 @@ export interface BatchedTransactionLog<T> {
    * Sequence identifier of the final transaction-entry to include in results (inclusive).
    */
   getSeqRangeTransactions(startId: number, finishId?: number): Promise<Transaction<T>[]>;
-};
-
+}

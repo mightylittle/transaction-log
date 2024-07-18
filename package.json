@@ -1,7 +1,7 @@
 {
   "name": "@mightylittle/transaction-log",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "In-memory, non-threadsafe replayable logs.",
   "homepage": "https://github.com/mightylittle/transaction-log",
   "source": "src/index.ts",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && microbundle",
+    "build": "npm run clean && microbundle && cp src/types.ts dist/types.d.ts",
     "start": "npm run clean && microbundle watch",
     "test": "npm run build && mocha",
     "typedoc": "typedoc src/index.ts"
