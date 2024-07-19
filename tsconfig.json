@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "moduleResolution": "NodeNext",
     "rootDir": "./src",
     "declaration": true,
     "declarationDir": "./dist",

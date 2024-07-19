@@ -1,11 +1,12 @@
 {
   "name": "@mightylittle/transaction-log",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "In-memory, non-threadsafe replayable logs.",
   "homepage": "https://github.com/mightylittle/transaction-log",
   "source": "src/index.ts",
   "exports": {
+    "types": "./dist/index.d.ts",
     "require": "./dist/transaction-log.cjs",
     "default": "./dist/transaction-log.modern.js"
   },
